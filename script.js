@@ -1,5 +1,5 @@
 //const BoardNotes = [];
-let BoardNotes = JSON.parse(localStorage.getItem('BoardNotes'));
+let BoardNotes = JSON.parse(sessionStorage.getItem('BoardNotes'));
 RenderNotes();
 
 function RenderNotes() {
@@ -18,7 +18,7 @@ function RenderNotes() {
     }
     console.log(BoardNotesHtml);
     document.querySelector('#borad').innerHTML = BoardNotesHtml;
-    localStorage.setItem('BoardNotes' , JSON.stringify(BoardNotes));
+    sessionStorage.setItem('BoardNotes' , JSON.stringify(BoardNotes));
 }
 
 
