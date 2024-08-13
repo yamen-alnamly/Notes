@@ -30,6 +30,7 @@ function PostNote() {
     let duedate = inputDate.value;
     if (inputitem.value != '' && inputDate.value != '')
      {
+        let BoardNotes = {}; 
         console.log(note);
         console.log(BoardNotes);
         BoardNotes.push({note,duedate});
