@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTES_BOARD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+<h1>NOTES BOARD</h1>
+<div id="input-note">
+    <input type="datetime-local" class="time">
+    <input type="text" class="task" onkeydown=" if (event.key === 'Enter') {PostNote()};">
+    <button onclick="PostNote()">ENTER</button>   
+</div> 
+<div id="borad">
+ 
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

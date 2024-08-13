@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Young+Serif&display=swap');
+
+body {
+    font-family: 'Young Serif', serif;
+    background-color: rgb(58, 143, 255);
+}
+
+body>h1 {
+    text-align: center;
+    font-size: 3.2em;
+    letter-spacing: -1px;
+    color: rgb(255, 255, 255);
+}
+
+#input-note {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: none;
+}
+
+#input-note input {
+    border: none;
+    outline: none;
+    width: 350px;
+    padding: 5px;
+    text-align: center;
+    font-size: 24px;
+}
+#input-note button 
+{
+border: none;
+padding: 14px 20px;
+font-size: 14px;
+font-weight: 900;
+color:rgb(31, 73, 31) ;
+cursor: pointer;
+}
+#borad
+{
+    border: 1px solid black ;
+    box-shadow: 4px 3px 11px rgba(0, 0, 0, 0.521);
+    margin: 10px auto 0 ;
+    padding: 20px 0;
+    background-color: rgba(255, 255, 255, 0.815);
+    max-width: 1200px;
+    height: fit-content;
+    min-height: 400px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.note
+{
+    justify-content: space-between;
+    align-items:center;
+    display: flex;
+    width: 180px;
+    height: 180px;
+    flex-direction: column;
+   overflow: auto;
+    background-color: rgb(136, 188, 255);
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.726);
+    transform: rotate(2deg);
+}
+.note button
+{
+    margin-top: 10px;
+    border-radius: 50px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(82, 82, 82);
+}
+.note p 
+{
+    margin-top: 40px;
+    text-align: center;
+    width: 90%;
+  font-size: 16px;
+  text-align: center;
+}
+.note h2
+{
+margin-top: 10px;
+font-size: 15px;
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 2px;
+}
