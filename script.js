@@ -5,9 +5,9 @@ RenderNotes();
 function RenderNotes() {
     let BoardNotesHtml = ''
     for (let i = 0; i < BoardNotes.length; i++) {
-        const Notes = BoardNotes[i];
-        const {note , duedate} = Notes ; 
-        const html = `
+        let Notes = BoardNotes[i];
+        let {note , duedate} = Notes ; 
+        let html = `
         <div class="note">
         <button onclick=" BoardNotes.splice(${i}, 1);
         RenderNotes();">x</button>
@@ -19,6 +19,7 @@ function RenderNotes() {
     console.log(BoardNotesHtml);
     document.querySelector('#borad').innerHTML = BoardNotesHtml;
     sessionStorage.setItem('BoardNotes' , JSON.stringify(BoardNotes));
+    return() ; 
 }
 
 
@@ -29,8 +30,7 @@ function PostNote() {
     let note = inputitem.value;
     let duedate = inputDate.value;
     if (inputitem.value != '' && inputDate.value != '')
-     {
-        let BoardNotes = []; 
+     { 
         console.log(note);
         console.log(BoardNotes);
         BoardNotes.push({note,duedate});
