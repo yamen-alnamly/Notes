@@ -23,7 +23,7 @@ function RenderNotes() {
 
 
 function PostNotes() {
-
+  localStorage.setItem('BoardNotes' , JSON.stringify(BoardNotes));
     let inputitem = document.querySelector('.task');
     let inputDate = document.querySelector('.time')
     if (inputitem.value != '' && inputDate.value != '')
