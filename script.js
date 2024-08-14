@@ -26,10 +26,10 @@ function PostNotes() {
 
     let inputitem = document.querySelector('.task');
     let inputDate = document.querySelector('.time')
-    let note = inputitem.value || [];
-    let duedate = inputDate.value || [];
     if (inputitem.value != '' && inputDate.value != '')
      {
+    let note = inputitem.value || [];
+    let duedate = inputDate.value || [];
         console.log(note);
         console.log(BoardNotes);
         BoardNotes.push({note , duedate});
