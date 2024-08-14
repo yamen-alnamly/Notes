@@ -32,7 +32,7 @@ function PostNotes() {
     let duedate = inputDate.value || [];
         console.log(note);
         console.log(BoardNotes);
-        BoardNotes.push({note , duedate});
+        BoardNotes.push({note : note , duedate : duedate });
         inputitem.value = '';
         RenderNotes();
     }
