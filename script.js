@@ -1,5 +1,5 @@
 //const BoardNotes = [];
-const BoardNotes = JSON.parse(localStorage.getItem('BoardNotes'));
+const BoardNotes = JSON.parse(localStorage.getItem('BoardNotes')) || [];
 RenderNotes();
 
 function RenderNotes() {
