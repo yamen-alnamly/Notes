@@ -25,6 +25,7 @@ body>h1 {
 #input-note input {
     border: none;
     outline: none;
+    margin: 30px; 
     width: 350px;
     padding: 5px;
     text-align: center;
